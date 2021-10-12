@@ -1,0 +1,5 @@
+rootProject.name = 'DyDemo'
+include ':@dynatrace_react-native-plugin'
+project(':@dynatrace_react-native-plugin').projectDir = new File(rootProject.projectDir, '../node_modules/@dynatrace/react-native-plugin/android')
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
